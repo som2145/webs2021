@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+
+<body>
+    <script>
+        //배열
+        const arr1 = new Array();
+        arr1[0] = 100;
+        arr1[1] = 200;
+        arr1[2] = "javascript";
+
+        //배열2
+        const arr2 = new Array(100, 200, "javascript");
+
+        //배열3
+        const arr3 = [];
+        arr3[0] = 100;
+        arr3[1] = 200;
+        arr3[2] = "javascript";
+
+        //배열4
+        const arr4 = [100, 200, "javascript"];
+
+        //2차 배열
+        const arr5 = [100, 200, ["javascript", "jquery"]];
+
+        document.write(arr5[0]);
+        document.write(arr5[1]);
+        document.write(arr5[2]);
+        document.write(arr5[2][0]);
+        document.write(arr5[2][1]);
+
+        //배열 불러오기(for문)
+        const arr6 = [100, 200, 300, 400, 500];
+        for (let i = 0; i <= 4; i++) {
+            document.write(arr6[i], "<br>");
+        }
+            document.write("<br><br>")
+        //배열 불러오기(forEach)
+        const arr7 = [100, 200, 300, 400, 500];
+
+        arr7.forEach(function(elem) {
+            document.write(elem);
+        })
+        document.write("<br><br>")
+
+        arr7.forEach(function(element, index, Array) {
+            document.write(element, "<br>");
+            document.write(index, "<br>");
+            document.write(Array, "<br>");
+        })
+
+        document.write("<br><br>")
+
+        //map
+        const arr8 = [100,200,300,400,500];
+        arr8.map(function(elem){
+            document.write(elem, "<br>");
+        });
+
+        //배열 불러오기(for in문)
+
+        //배열 불러오기(for of문)
+    </script>
+</body></html>

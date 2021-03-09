@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let score = 85;
+        let gread;
+        console.log(gread)
+
+        if(score >= 90){
+            gread = "A";
+        }else if (score >= 80 && score < 90){
+            gread = "B";
+        }else if (score >= 70 && score < 80){
+            gread = "C";
+        }else if (score >= 60 && score < 70){
+            gread = "D";
+        }else if (score < 60){
+            gread = "F";
+        }
+        console.log(gread);
+        switch(gread){
+            case "A" : document.write("당신의 학점은 A입니다.")
+            break;
+            case "B" : document.write("당신의 학점은 B입니다.")
+            break;
+            case "C" : document.write("당신의 학점은 C입니다.")
+            break;
+            case "D" : document.write("당신의 학점은 D입니다.")
+            break;
+            case "F" : document.write("당신의 학점은 F입니다.")
+            break;
+        }
+    </script>
+</body>
+</html>
